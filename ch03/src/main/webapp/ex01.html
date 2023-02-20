@@ -38,9 +38,31 @@ body {
 }
 </style>
 </head>
-
+<script>
+f = function() {
+	console.log("time out");
+}
+window.onload = function() {
+	elDiv = document.getElementById("myBox");
+	
+	elDiv.onclick = function() {
+		console.log(this);
+		marginTop = parseInt(this.style.marginTop);
+		console.log("marginTop : "+marginTop);
+		intervalId = setInterval(function() {
+			if(marginTop <= -80) {
+				clearInterval(intervalId);
+				return;
+			}
+			marginTop-=1;
+			elDiv.style.marginTop = marginTop+"px";
+			console.log("marginTop : "+marginTop);
+		},100);
+	}
+	}
+</script>
 <body>
-	<div class="box1" style="margin-top:100px">
+	<div id="myBox" class="box1" style="margin-top:100px">
 		CSS에서 가장 보편적이고 많이 사용하는 마진과 패딩에 대한 값이 어떻게 적용되는지 확인해 보겠습니다.
 	</div>
 </body>
