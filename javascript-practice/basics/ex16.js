@@ -68,7 +68,6 @@ var sum = function() {
     return sum;
 }
 
-
 console.log(sum(10));
 console.log(sum(10, 20));
 console.log(sum(10, 20, 30));

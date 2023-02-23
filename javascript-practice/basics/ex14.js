@@ -21,7 +21,7 @@ console.log(url4);
 // 만들어야 할 URL
 // "http://www.mysite.com/user?name=둘리&email=dooly@gmail.com";
 var url = "http://www.mysite.com/user";
-var formData = {
+var formData = {    
     name: "둘리",
     email: "dooly@gmail.com"
 }
