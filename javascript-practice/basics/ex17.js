@@ -10,8 +10,8 @@ var MyObject = {
         console.log(this.v);
     },
     f2: function (param1, param2) {
-        console.log(param1 + " " + this.v + " " + param2 ? param2 : "");
-    }
+        console.log(param1 + " " + this.v + " " + (param2 ? param2 : ""));
+    },
 }
 
 // 일반적인 객체의 함수 호출
