@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -6,7 +6,11 @@
 <script>
 $(function(){
 	setTimeout(function(){
-	}, 1000);
+		$("#p1").text("1.안녕하세요");
+		$("#p2").text("<strong>2.안녕하세요<strong>");
+		console.log($("#p3").text());
+		console.log($("#p4").text());
+	}, 2000);
 });
 </script>
 </head>
@@ -21,11 +25,11 @@ $(function(){
 		HTML의 escape 문자들
 		& -> &amp;
 		space -> &nbsp;
-		< -> &lth;
+		< -> &lt;
 		> -> &gt;
 		' -> &quot;
 	-->
 	<h4>Back &amp; White</h4>
-	<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that</h4>	
+	<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that</h4>	
 </body>
 </html>
