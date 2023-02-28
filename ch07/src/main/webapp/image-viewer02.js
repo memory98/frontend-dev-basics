@@ -60,7 +60,7 @@ imageViewer = {
 		file: 'Penguins.jpg'		
 	},{
 		name: '툴립',
-		file: 'Tulips.jpg'		
+		file: 'Tulips.jpg'
 	}]
 };
 
