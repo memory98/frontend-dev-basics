@@ -59,3 +59,16 @@ console.log('\n--------------\n');
         process.stdout.write(`${e} : ${(x =>x*x )(e)}\t`); 
     }
 });
+
+// ex4 - this를 어휘적으로 바인딩(lexical Bind)
+console.log('\n--------------\n');
+const dooly = {
+    name: 'dooly',
+    friends: ['또치','마이콜','도우너','길동이'],
+    printFriends: function() {
+        // console.log(this);
+        this.friends.forEach((f)=>  console.log(`${this.name}의 친구 ${f}`));
+    }
+};
+
+dooly.printFriends();
