@@ -8,7 +8,7 @@ var myFunction = function() {
     console.log("일반함수")
 }
 
-// 생성자 함수(고나례대로 대무나로 시작한다.)
+// 생성자 함수(관례대로 대문자로 시작한다.)
 
 var MyObject = function(name, age) {
     this.name = name;
